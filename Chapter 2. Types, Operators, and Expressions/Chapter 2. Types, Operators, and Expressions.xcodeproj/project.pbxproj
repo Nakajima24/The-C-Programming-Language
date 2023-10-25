@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D38FC13F2AE7E90D0066D73A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D38FC13E2AE7E90D0066D73A /* main.c */; };
+		D38FC1562AE92B350066D73A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D38FC1552AE92B350066D73A /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +29,9 @@
 		D38FC1362AE792130066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		D38FC1392AE7C16C0066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		D38FC13E2AE7E90D0066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D38FC14E2AE908E60066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D38FC1512AE908FB0066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D38FC1552AE92B350066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		D3ADAEB22AE53F4B0049CDFC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +65,9 @@
 		D35551F32AE40634002CB191 /* Chapter 2. Types, Operators, and Expressions */ = {
 			isa = PBXGroup;
 			children = (
+				D38FC1542AE92B280066D73A /* Exercise 2-11 */,
+				D38FC1502AE908E90066D73A /* Exercise 2-10 */,
+				D38FC14D2AE908DA0066D73A /* Exercise 2-9 */,
 				D38FC13D2AE7E9000066D73A /* Exercise 2-8 */,
 				D38FC1382AE7C15D0066D73A /* Exercise 2-7 */,
 				D38FC1352AE792080066D73A /* Exercise 2-6 */,
@@ -118,6 +124,30 @@
 				D38FC13E2AE7E90D0066D73A /* main.c */,
 			);
 			path = "Exercise 2-8";
+			sourceTree = "<group>";
+		};
+		D38FC14D2AE908DA0066D73A /* Exercise 2-9 */ = {
+			isa = PBXGroup;
+			children = (
+				D38FC14E2AE908E60066D73A /* main.c */,
+			);
+			path = "Exercise 2-9";
+			sourceTree = "<group>";
+		};
+		D38FC1502AE908E90066D73A /* Exercise 2-10 */ = {
+			isa = PBXGroup;
+			children = (
+				D38FC1512AE908FB0066D73A /* main.c */,
+			);
+			path = "Exercise 2-10";
+			sourceTree = "<group>";
+		};
+		D38FC1542AE92B280066D73A /* Exercise 2-11 */ = {
+			isa = PBXGroup;
+			children = (
+				D38FC1552AE92B350066D73A /* main.c */,
+			);
+			path = "Exercise 2-11";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D38FC13F2AE7E90D0066D73A /* main.c in Sources */,
+				D38FC1562AE92B350066D73A /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Chapter\\ 2.\\ Types,\\ Operators,\\ and\\ Expressions/Exercise\\ 2-5/main.c";
+				DEVELOPMENT_ASSET_PATHS = "";
 				GCC_NO_COMMON_BLOCKS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -307,7 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Chapter\\ 2.\\ Types,\\ Operators,\\ and\\ Expressions/Exercise\\ 2-5/main.c";
+				DEVELOPMENT_ASSET_PATHS = "";
 				GCC_NO_COMMON_BLOCKS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
