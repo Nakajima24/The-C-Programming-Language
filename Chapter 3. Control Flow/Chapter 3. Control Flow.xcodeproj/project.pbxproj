@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D38FC1782AED0FF30066D73A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D38FC1732AEB5A310066D73A /* main.c */; };
+		D38FC17F2AEE4F060066D73A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D38FC17E2AEE4F060066D73A /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +29,8 @@
 		D38FC1702AEA964D0066D73A /* main2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main2.c; sourceTree = "<group>"; };
 		D38FC1732AEB5A310066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		D38FC1762AECCD760066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D38FC17B2AEE3DE20066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D38FC17E2AEE4F060066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,8 @@
 		D38FC1622AE9324F0066D73A /* Chapter 3. Control Flow */ = {
 			isa = PBXGroup;
 			children = (
+				D38FC17D2AEE4EF70066D73A /* Exercise 3-6 */,
+				D38FC17A2AEE3DD10066D73A /* Exercise 3-5 */,
 				D38FC1752AECCD660066D73A /* Exercise 3-4 */,
 				D38FC1722AEB5A240066D73A /* Exercise 3-3 */,
 				D38FC16D2AE944EF0066D73A /* Exercise 3-2 */,
@@ -100,6 +104,22 @@
 				D38FC1762AECCD760066D73A /* main.c */,
 			);
 			path = "Exercise 3-4";
+			sourceTree = "<group>";
+		};
+		D38FC17A2AEE3DD10066D73A /* Exercise 3-5 */ = {
+			isa = PBXGroup;
+			children = (
+				D38FC17B2AEE3DE20066D73A /* main.c */,
+			);
+			path = "Exercise 3-5";
+			sourceTree = "<group>";
+		};
+		D38FC17D2AEE4EF70066D73A /* Exercise 3-6 */ = {
+			isa = PBXGroup;
+			children = (
+				D38FC17E2AEE4F060066D73A /* main.c */,
+			);
+			path = "Exercise 3-6";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D38FC1782AED0FF30066D73A /* main.c in Sources */,
+				D38FC17F2AEE4F060066D73A /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
