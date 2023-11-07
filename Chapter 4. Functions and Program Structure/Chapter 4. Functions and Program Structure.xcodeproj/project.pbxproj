@@ -6,10 +6,6 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		D38FC1CA2AF516A40066D73A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D38FC1C92AF516A40066D73A /* main.c */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		D38FC1872AEEBE300066D73A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -34,7 +30,11 @@
 		D38FC1BE2AF38D7D0066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		D38FC1C12AF392AA0066D73A /* main_fail.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main_fail.c; sourceTree = "<group>"; };
 		D38FC1C62AF516540066D73A /* main_fail.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main_fail.c; sourceTree = "<group>"; };
-		D38FC1C92AF516A40066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D38FC1C92AF516A40066D73A /* main_fail.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main_fail.c; sourceTree = "<group>"; };
+		D38FC1CC2AF5E90D0066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D38FC1CF2AF5F3650066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D38FC1D22AF685880066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D38FC1D52AF779970066D73A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +67,10 @@
 		D38FC18B2AEEBE300066D73A /* Chapter 4. Functions and Program Structure */ = {
 			isa = PBXGroup;
 			children = (
+				D38FC1D42AF7798C0066D73A /* Exercise 4-14 */,
+				D38FC1D12AF685770066D73A /* Exercise 4-13 */,
+				D38FC1CE2AF5F3540066D73A /* Exercise 4-12 */,
+				D38FC1CB2AF5E8FD0066D73A /* Exercise 4-11 */,
 				D38FC1C82AF516970066D73A /* Exercise 4-10 */,
 				D38FC1C32AF511070066D73A /* Exercise 4-9 */,
 				D38FC1C02AF392A00066D73A /* Exercise 4-8 */,
@@ -157,9 +161,41 @@
 		D38FC1C82AF516970066D73A /* Exercise 4-10 */ = {
 			isa = PBXGroup;
 			children = (
-				D38FC1C92AF516A40066D73A /* main.c */,
+				D38FC1C92AF516A40066D73A /* main_fail.c */,
 			);
 			path = "Exercise 4-10";
+			sourceTree = "<group>";
+		};
+		D38FC1CB2AF5E8FD0066D73A /* Exercise 4-11 */ = {
+			isa = PBXGroup;
+			children = (
+				D38FC1CC2AF5E90D0066D73A /* main.c */,
+			);
+			path = "Exercise 4-11";
+			sourceTree = "<group>";
+		};
+		D38FC1CE2AF5F3540066D73A /* Exercise 4-12 */ = {
+			isa = PBXGroup;
+			children = (
+				D38FC1CF2AF5F3650066D73A /* main.c */,
+			);
+			path = "Exercise 4-12";
+			sourceTree = "<group>";
+		};
+		D38FC1D12AF685770066D73A /* Exercise 4-13 */ = {
+			isa = PBXGroup;
+			children = (
+				D38FC1D22AF685880066D73A /* main.c */,
+			);
+			path = "Exercise 4-13";
+			sourceTree = "<group>";
+		};
+		D38FC1D42AF7798C0066D73A /* Exercise 4-14 */ = {
+			isa = PBXGroup;
+			children = (
+				D38FC1D52AF779970066D73A /* main.c */,
+			);
+			path = "Exercise 4-14";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D38FC1CA2AF516A40066D73A /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
