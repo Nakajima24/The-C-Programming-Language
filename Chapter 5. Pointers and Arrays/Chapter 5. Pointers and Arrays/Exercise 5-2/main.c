@@ -1,12 +1,16 @@
 //
 //  main.c
-//  Chapter 4. Functions and Program Structure
+//  Chapter 5. Pointers and Arrays
 //
-//  Created by Brian Chen on 05/11/2023.
+//  Created by Brian Chen on 07/11/2023.
 //
-//Exercise 5-l. As written, getint treats a + or - not followed by a digit as a valid representation of zero. Fix it to push such a character back on the input.
+//Exercise 5-2. Write getfloat, the floating-point analog of getint. What type does getfloat return as its function value?
+
+//as shown below, it return double value
+
 #include <ctype.h>
 #include <stdio.h>
+#include <math.h>
 #define BUFSIZE 100
 char buf[BUFSIZE]; /* buffer for ungetch */
 int bufp = 0; /* next free position in buf */
@@ -20,39 +24,46 @@ void un_getch(int c){ /* push character back on input */
         buf[bufp++] = c;
 }
 /* getint: get next integer from input into *pn */
-int getint(int *pn){
-    int c, sign;
-    static int sign_last = 1;
+double getfloat(double *pn){
+    double c, sign;
+    static double sign_last = 1;
     while (isspace(c = getch())) /* skip white space */
         ;
-    if (!isdigit(c) && c != EOF && c != '+' && c != '-') {
+    if (!isdigit(c) && c != EOF && c != '+' && c != '-' && c != '.') {
         un_getch(c); /* it's not a number*/
-        return 0;
+        return 0.0;
     }
     sign = (c == '-') ? -1 : 1;
-    if (c == '+' || c == '-'){ //receive the sign
+    if (c == '+' || c == '-') //receive the sign
         c = getch();
-    }
     for (*pn = 0; isdigit(c); c = getch()){
-
         *pn = 10 * *pn + (c - '0');
+//        printf("*pn:%g\n",*pn);
+    }
+    int digit;
+    double frac;
+    if(c == '.')
+        c = getch();
+    for (frac = 0, digit = 1; isdigit(c); c = getch(), digit++){
+        frac = frac + pow(0.1,digit) * (c - '0');
+//        printf("*pn:%f\n",frac);
     }
     
-    *pn *= sign * sign_last;
-    printf("*pn:%d\n",*pn);
-    if(*pn == 0)
+    *pn = (*pn + frac) * sign * sign_last;
+    printf("*pn:%g\n",*pn);
+    if(*pn == 0.0)
         sign_last = sign;
     else
-        sign_last = 1;
-    
+        sign_last = 1.0;
     if (c != EOF)
         un_getch (c);
     return c; //c = -1 program ended
 }
 #define SIZE 100
 int main(void){
-    int n, array[SIZE], getint(int *), result = 0;
-    for (n = 0; n < SIZE && getint(&array[n]) != EOF; n++)
+    int n;
+    double array[SIZE], getfloat(double *), result = 0.0;
+    for (n = 0; n < SIZE && getfloat(&array[n]) != EOF; n++)
         if(array[n] == 0)
             n--;
     printf("\n");
@@ -61,9 +72,9 @@ int main(void){
             printf(" ");
         else if(array[i] > 0)
             printf("+");
-        printf("%d\n", array[i]);
+        printf("%g\n", array[i]);
         result += array[i];
     }
-    printf("------------\n%d",result);
+    printf("------------\n%g",result);
     printf("\n");
 }
